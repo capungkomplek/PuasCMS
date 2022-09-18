@@ -1,0 +1,119 @@
+html, body {
+  display: grid;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+.container-auth {
+  display: flex;
+}
+
+.content-left {
+  flex: 1;
+  background: #fff;
+  background-image: url(../img/img-bottom.png);
+  background-image: url(../img/img-bottom.png), linear-gradient(180deg, rgba(255, 255, 255, 0.96) 48.96%, #A9E2EF 77.96%, #0BA8E1 100%), url(../img/img-building.png);
+  background-position: bottom, center, center;
+  background-repeat: no-repeat;
+  background-size: 100%, cover, cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+.content-left .top img {
+  width: 180px;
+}
+.content-left .center img {
+  width: 240px;
+}
+.content-left .bottom span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-right .area-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  max-width: 460px;
+}
+.content-right .area-control .area-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 70%;
+}
+.content-right .area-header h1 {
+  color: #0E1B3A;
+  font-size: 28px;
+  font-weight: bold;
+}
+.content-right .area-header p {
+  color: #828282;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+.content-right .area-body {
+  width: 100%;
+}
+.content-right .area-body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.content-right form .form-group {
+  margin-bottom: 0;
+}
+.content-right form .form-group label {
+  color: #0E1B3A;
+  font-weight: 600;
+}
+.content-right form .form-forgot-password {
+  text-align: right;
+}
+.content-right form .form-control-feedback {
+  height: -webkit-fill-available;
+}
+.content-right form .form-control-feedback.clickable {
+  color: #828282;
+  cursor:pointer;
+  pointer-events:auto;
+}
+.content-right form .form-control-feedback.clickable:hover {
+  color: #0E1B3A;
+}
+.content-right form .btn {
+  height: 44px;
+}
+
+@media screen and (max-width: 1031px) {
+  .content-left {
+    display: none;
+  }
+
+  .content-right .area-control {
+    max-width: 85%;
+  }
+  .content-right .area-control .area-header {
+    width: 100%;
+  }
+}
