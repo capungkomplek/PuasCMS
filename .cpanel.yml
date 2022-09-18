@@ -1,0 +1,5 @@
+---
+deployment:
+tasks:
+- export DEPLOYPATH=/home/bvns1544/PuasCMS
+- /bin/cp -r * $DEPLOYPATH
